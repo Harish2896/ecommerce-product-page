@@ -37,12 +37,7 @@ const Navbar = ({ noOfItems, setNoOfItems }) => {
       </div>
       <div>
         <article className="block relative cursor-pointer">
-          <img
-            className="w-6 h-6"
-            src={cart}
-            alt="cart-icon"
-            onClick={clickHandler}
-          />
+          <img src={cart} alt="cart-icon" onClick={clickHandler} />
           <span
             className={
               noOfItems
@@ -53,11 +48,7 @@ const Navbar = ({ noOfItems, setNoOfItems }) => {
             {noOfItems}
           </span>
         </article>
-        <img
-          className="w-7 md:w-10 cursor-pointer border-white border-2 rounded-full transition ease-out delay-150 duration-500 hover:border-orange"
-          src={avatar}
-          alt="cart-icon"
-        />
+        <img src={avatar} alt="cart-icon" />
       </div>
       {isCartOpen && (
         <Cart

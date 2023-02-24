@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/{App.js,}",
-    "./src/components/{Navbar.js,}",
+    "./src/components/navbar/Navbar.js",
     "./src/components/Product/ProductCarousel.js",
     "./src/components/Prod-Description/ProdDescription.js",
     "./src/components/cart/Cart.js",

@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro";
 
 export const StyledNavbar = styled.div`
-  ${tw`w-full px-2 py-4 relative flex justify-between items-center md:py-0 md:border-b-[1px] md:border-grayishBlue`}
+  ${tw`w-full px-2 py-4 relative flex justify-between items-center md:py-2 md:border-b-[1px] md:border-grayishBlue`}
 
   div:nth-child(1) {
     img {
@@ -15,6 +15,12 @@ export const StyledNavbar = styled.div`
 
   div:nth-child(2) {
     ${tw`flex space-x-2 items-center md:space-x-8`}
+    img:nth-child(1) {
+      ${tw`w-6 h-6`}
+    }
+    img:nth-child(2) {
+      ${tw`w-7 md:w-10 cursor-pointer border-white border-2 rounded-full transition ease-out delay-150 duration-500 hover:border-orange`}
+    }
   }
 `;
 //Navlinks....
